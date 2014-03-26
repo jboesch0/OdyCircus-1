@@ -42,8 +42,11 @@ public final class R {
         public static final int titre=0x7f080005;
     }
     public static final class layout {
-        public static final int activity_main=0x7f030000;
-        public static final int activity_second=0x7f030001;
+        public static final int odycircus =0x7f030000;
+        public static final int inscription=0x7f030001;
+        public static final int profil=0x7f030002;
+        public static final int cirque=0x7f030003;
+        public static final int uploadphoto=0x7f030004;
     }
     public static final class menu {
         public static final int inscription=0x7f070000;

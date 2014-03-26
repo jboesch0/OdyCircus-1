@@ -5,28 +5,43 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="8"
-        android:targetSdkVersion="18" />
+        android:minSdkVersion="9"
+        android:targetSdkVersion="19" />
+
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/ic_launcher"
+        android:icon="@drawable/logoody"
         android:label="@string/app_name"
+        android:debuggable="true"
         android:theme="@style/AppTheme" >
+
         <activity
-            android:name="com.example.odycircus.MainActivity"
+            android:name=".OdyCircus"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.odycircus.InscriptionActivity" />
+
+        <activity android:name="com.example.odycircus.Profil"
+                  android:label="Profil">
+        </activity>
+
         <activity
             android:name="com.example.odycircus.Inscription"
-            android:label="@string/title_activity_second" >
+            android:label="Odycircus : Inscription" >
+        </activity>
+
+        <activity
+                android:name="com.example.odycircus.Map"
+                android:label="Odycircus : Carte">
         </activity>
     </application>
 
